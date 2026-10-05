@@ -1,0 +1,239 @@
+.learning-page {
+    min-height: 75vh;
+    background: var(--bg);
+    padding-bottom: 70px;
+}
+
+.learning-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 38px 24px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 20px;
+}
+
+.learning-top a {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.learning-top h1 {
+    margin: 10px 0 4px;
+    color: var(--dark);
+    font-size: 32px;
+}
+
+.learning-top p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.learning-percent {
+    background: var(--primary-light);
+    color: var(--primary);
+    border-radius: 9px;
+    padding: 10px 13px;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.learning-layout {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 285px 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.lesson-sidebar,
+.lesson-view {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.lesson-sidebar {
+    padding: 16px;
+}
+
+.lesson-sidebar h3 {
+    margin: 3px 4px 13px;
+    color: var(--dark);
+    font-size: 14px;
+}
+
+.lesson-sidebar button {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    padding: 11px 8px;
+    border-radius: 8px;
+    color: var(--muted);
+    cursor: pointer;
+    font: inherit;
+    font-size: 12px;
+    transition: 0.2s ease;
+}
+
+.lesson-sidebar button:hover,
+.lesson-sidebar button.active {
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.lesson-sidebar button span {
+    width: 23px;
+    height: 23px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #f1f5f9;
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+.quiz-link {
+    margin-top: 12px;
+    border-top: 1px solid #eef0f3 !important;
+    padding-top: 16px !important;
+    color: var(--success) !important;
+    font-weight: 800 !important;
+}
+
+.video-placeholder {
+    min-height: 360px;
+    background:
+        radial-gradient(circle at 50% 30%, rgba(99, 102, 241, 0.3), transparent 35%),
+        linear-gradient(135deg, #0f172a, #312e81);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: 30px;
+}
+
+.play-circle {
+    width: 74px;
+    height: 74px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.13);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    font-size: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.video-placeholder strong {
+    font-size: 22px;
+}
+
+.video-placeholder span {
+    color: #cbd5e1;
+    font-size: 12px;
+}
+
+.lesson-content {
+    padding: 30px;
+}
+
+.lesson-content h2 {
+    color: var(--dark);
+    margin: 8px 0 10px;
+    font-size: 26px;
+}
+
+.lesson-content p {
+    color: var(--muted);
+    line-height: 1.8;
+    max-width: 750px;
+    font-size: 14px;
+}
+
+.lesson-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.lesson-actions button {
+    border: 1px solid var(--border);
+    background: #fff;
+    color: #374151;
+    padding: 11px 14px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: 0.2s ease;
+}
+
+.lesson-actions button:hover {
+    border-color: #a5b4fc;
+    color: var(--primary);
+}
+
+.lesson-actions .next-btn {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: #fff;
+}
+
+.lesson-actions .next-btn:hover {
+    background: var(--primary-dark);
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .learning-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .learning-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .lesson-sidebar {
+        order: 2;
+    }
+
+    .lesson-view {
+        order: 1;
+    }
+}
+
+@media (max-width: 560px) {
+    .learning-top,
+    .learning-layout {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .learning-top h1 {
+        font-size: 27px;
+    }
+
+    .video-placeholder {
+        min-height: 270px;
+    }
+
+    .lesson-content {
+        padding: 22px;
+    }
+}

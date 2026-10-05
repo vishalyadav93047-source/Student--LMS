@@ -1,0 +1,49 @@
+.not-found {
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background:
+        radial-gradient(circle at center, rgba(99, 102, 241, 0.08), transparent 35%),
+        var(--bg);
+    padding: 30px;
+}
+
+.not-found > div {
+    max-width: 500px;
+}
+
+.not-found span {
+    color: var(--primary);
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.not-found h1 {
+    color: var(--dark);
+    margin: 10px 0 8px;
+    font-size: 30px;
+}
+
+.not-found p {
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.not-found a {
+    display: inline-block;
+    margin-top: 15px;
+    background: var(--primary);
+    color: #fff;
+    padding: 12px 17px;
+    border-radius: 9px;
+    font-weight: 800;
+    transition: 0.25s ease;
+}
+
+.not-found a:hover {
+    background: var(--primary-dark);
+    color: #fff;
+    transform: translateY(-2px);
+}

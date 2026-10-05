@@ -1,0 +1,113 @@
+.signup-page {
+    min-height: calc(100vh - 76px);
+    background:
+        radial-gradient(circle at 85% 15%, rgba(124, 58, 237, 0.1), transparent 30%),
+        var(--bg);
+    padding: 55px 20px;
+    display: grid;
+    place-items: center;
+}
+
+.signup-card {
+    width: min(100%, 560px);
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 36px;
+    box-shadow: var(--shadow-lg);
+}
+
+.signup-card h1 {
+    color: var(--dark);
+    margin: 9px 0;
+    font-size: 32px;
+}
+
+.signup-card > p {
+    color: var(--muted);
+    line-height: 1.6;
+    font-size: 13px;
+    margin-bottom: 23px;
+}
+
+.signup-form {
+    display: grid;
+    gap: 15px;
+}
+
+.signup-form label {
+    color: #374151;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.signup-form input {
+    width: 100%;
+    margin-top: 7px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    padding: 12px;
+    outline: none;
+    font: inherit;
+    transition: 0.25s ease;
+}
+
+.signup-form input:focus {
+    border-color: #818cf8;
+    box-shadow: 0 0 0 4px #e0e7ff;
+}
+
+.two-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+
+.signup-form button {
+    border: 0;
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: #fff;
+    padding: 13px;
+    border-radius: 9px;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: 0.25s ease;
+}
+
+.signup-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(79, 70, 229, 0.22);
+}
+
+.signup-error {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    border-radius: 9px;
+    padding: 11px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.signup-footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.signup-footer a {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+@media (max-width: 520px) {
+    .signup-card {
+        padding: 25px 20px;
+    }
+
+    .two-fields {
+        grid-template-columns: 1fr;
+    }
+}
