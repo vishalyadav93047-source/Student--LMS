@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import "./Navbar.css";
+import logo from "../../Image/logo.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -42,7 +43,7 @@ function Navbar() {
           onClick={closeMenu}
         >
           <img
-            src="/src/Image/logo.png"
+            src={logo}
             alt="EduNova Logo"
             className="brand-logo"
           />
